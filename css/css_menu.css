@@ -1,0 +1,98 @@
+
+    .dropdown {
+        background-color: #333;
+        clear: both;
+        display: block;
+        width: 100%;
+        position: relative;
+        width: 100%;
+    }
+    .dropdown ul {
+        content: "";
+        clear: both;
+        display: block;
+
+    }
+    .dropdown ul li {
+        position: relative;
+        display: block;
+        float: left;
+    }
+    .dropdown ul li a{
+        display: block;
+        text-align: center;
+        padding:11px 20px;
+        color:#fff;
+        text-decoration: none;
+        line-height: 1;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .dropdown ul li.active a{
+        background-color:#DD3D36 ;
+    }
+    .dropdown ul li:not(.active) a:hover {
+        background-color:#DD3D36 ;
+    } 
+    .dropdown ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        height: 0;
+        width: 0;
+        background-color: #333;
+        -webkit-transition:opacity 0.5s;
+        -moz-transition:opacity 0.5s;
+        -o-transition:opacity 0.5s;
+        transition:opacity 0.5s;
+        top:100%;
+        left: 0;
+        padding: 0;
+        min-width: 200px;
+    }
+    .dropdown ul li ul li{
+        white-space: nowrap;
+        display: block;
+        width: 100%;
+    }
+    .dropdown ul li ul li a {
+        width: 100%;
+        border-radius: 0;
+        color:#fff;
+        padding:10px 20px;
+        text-align: left;
+    }
+    .dropdown ul li a i {
+        margin-left: 10px;
+        float: right;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+    .dropdown >ul >li:hover >ul {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        width: auto;
+        display: block;
+        z-index: 999;
+    }
+    .dropdown >ul >li >ul li:hover >ul {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        width: auto;
+        display: block;
+        z-index: 999;
+        left:100%;
+        top: 0;
+    }
+    .dropdown >ul >li >ul li >ul li:hover >ul{
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        width: auto;
+        display: block;
+        z-index: 999;
+        left:100%;
+        top: 0;
+    }

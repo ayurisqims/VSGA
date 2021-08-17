@@ -1,0 +1,79 @@
+/* settingan untuk tag ul  */
+nav ul {
+    background: white;
+    padding: 0 0px;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* mengatur button menempel ke kiri  */
+nav ul li {
+    float: left;
+}
+
+/* warna ketika mouse mengarah ke button */
+nav ul li:hover {
+    background-color: rgb(154, 203, 218);
+}
+
+/* settingan button */
+nav ul li a {
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: rgb(64, 162, 175);
+}
+
+/* Warna ketika mouse mengarah ke button  */
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* settingan untuk dropdown */
+nav ul ul {
+    display: none;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    max-width: 300px;
+    width: auto;
+}
+
+/* settingan untuk li pada dropdown */
+nav ul ul li {
+    float: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    position: relative;
+}
+
+/* settingan untuk menampilkan ul dalam li ketika dipilih mouse */
+nav ul li:hover > ul {
+    display: block;
+}
+
+/* settingan untuk button didalam child dropdown */
+nav ul ul li a {
+    padding: 10px 40px;
+    color: rgb(64, 162, 175);
+}
+
+/* settingan untuk button didalam child dropdown ketika dipilih mouse */
+nav ul ul li a:hover {
+    background: rgb(64, 162, 175);
+}
+
+
+/* settingan untuk dropdown ke 2 */
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top:0;
+    width: 200px;
+}

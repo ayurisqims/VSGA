@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 14px
+}
+
+form {
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #fff;
+    border: 3px solid black;
+    max-width: 500px
+}
+
+h1 {
+    margin: 20 0;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    font-size: 14px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: black;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px;
+    color: #fff;
+    background-color: mediumseagreen;
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: none;
+    margin: 8px 0;
+}
+
+.text-bawah{
+    text-align: center
+}
